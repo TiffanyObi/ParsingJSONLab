@@ -41,9 +41,13 @@ extension GroupOfColors {
         
         var colorData = [Colors]()
         
+        
+        
         guard let fileURL = Bundle.main.url(forResource: "colors", withExtension: "json") else {
             fatalError("Could not locate json file")
         }
+        
+        
         
         do {
             let data = try Data(contentsOf: fileURL)
@@ -55,6 +59,8 @@ extension GroupOfColors {
         } catch {
             fatalError("failed to load content \(error)")
         }
+        
+        
         return colorData
     }
 }
