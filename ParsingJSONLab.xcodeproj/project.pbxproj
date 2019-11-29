@@ -24,6 +24,7 @@
 		3E96C22D238F0B0E006421A9 /* ColorsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E96C22C238F0B0E006421A9 /* ColorsDetailViewController.swift */; };
 		3ECD06A42391A14A001D86FC /* RandomUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD06A32391A14A001D86FC /* RandomUserData.swift */; };
 		3ECD06A62391AE8D001D86FC /* RandomUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD06A52391AE8D001D86FC /* RandomUsersViewController.swift */; };
+		3ECD06A82391B755001D86FC /* RandomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD06A72391B755001D86FC /* RandomDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3E96C22C238F0B0E006421A9 /* ColorsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailViewController.swift; sourceTree = "<group>"; };
 		3ECD06A32391A14A001D86FC /* RandomUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserData.swift; sourceTree = "<group>"; };
 		3ECD06A52391AE8D001D86FC /* RandomUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersViewController.swift; sourceTree = "<group>"; };
+		3ECD06A72391B755001D86FC /* RandomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				3E96C22C238F0B0E006421A9 /* ColorsDetailViewController.swift */,
 				3ECD06A32391A14A001D86FC /* RandomUserData.swift */,
 				3ECD06A52391AE8D001D86FC /* RandomUsersViewController.swift */,
+				3ECD06A72391B755001D86FC /* RandomDetailViewController.swift */,
 			);
 			path = "Controllers!";
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				3ECD06A62391AE8D001D86FC /* RandomUsersViewController.swift in Sources */,
 				3E832B71238DB83C0045A74D /* WeatherViewController.swift in Sources */,
 				3E832B6D238DB83C0045A74D /* AppDelegate.swift in Sources */,
+				3ECD06A82391B755001D86FC /* RandomDetailViewController.swift in Sources */,
 				3E832B8B238DD91C0045A74D /* ColorsViewController.swift in Sources */,
 				3E832B6F238DB83C0045A74D /* SceneDelegate.swift in Sources */,
 				3ECD06A42391A14A001D86FC /* RandomUserData.swift in Sources */,

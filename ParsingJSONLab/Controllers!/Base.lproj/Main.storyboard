@@ -279,6 +279,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="W69-L6-7Ua" kind="show" id="UoW-fy-eSs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -300,6 +303,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlx-mm-fx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="1650.6696428571429"/>
+        </scene>
+        <!--Random Detail View Controller-->
+        <scene sceneID="kYy-Ro-stF">
+            <objects>
+                <viewController id="W69-L6-7Ua" customClass="RandomDetailViewController" customModule="ParsingJSONLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iQH-qP-Qy4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdt-pY-rII">
+                                <rect key="frame" x="100" y="168" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUs-fh-Oow">
+                                <rect key="frame" x="100" y="299.5" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv0-11-cvJ">
+                                <rect key="frame" x="100" y="409" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vv0-11-cvJ" firstAttribute="top" secondItem="mUs-fh-Oow" secondAttribute="bottom" constant="89" id="0Ve-fr-xTs"/>
+                            <constraint firstItem="gdt-pY-rII" firstAttribute="top" secondItem="lyP-Ig-p6W" secondAttribute="top" constant="80" id="1gX-5c-hwq"/>
+                            <constraint firstItem="gdt-pY-rII" firstAttribute="leading" secondItem="lyP-Ig-p6W" secondAttribute="leading" constant="100" id="79S-jd-pht"/>
+                            <constraint firstItem="mUs-fh-Oow" firstAttribute="top" secondItem="gdt-pY-rII" secondAttribute="bottom" constant="111" id="BG1-E4-u0H"/>
+                            <constraint firstItem="mUs-fh-Oow" firstAttribute="leading" secondItem="lyP-Ig-p6W" secondAttribute="leading" constant="100" id="DyI-yW-4Xt"/>
+                            <constraint firstItem="lyP-Ig-p6W" firstAttribute="trailing" secondItem="mUs-fh-Oow" secondAttribute="trailing" constant="100" id="HBK-5P-q6Q"/>
+                            <constraint firstItem="lyP-Ig-p6W" firstAttribute="trailing" secondItem="gdt-pY-rII" secondAttribute="trailing" constant="100" id="Okg-8c-aW3"/>
+                            <constraint firstItem="vv0-11-cvJ" firstAttribute="leading" secondItem="lyP-Ig-p6W" secondAttribute="leading" constant="100" id="gx7-Fy-skd"/>
+                            <constraint firstItem="lyP-Ig-p6W" firstAttribute="trailing" secondItem="vv0-11-cvJ" secondAttribute="trailing" constant="100" id="wCd-Dk-jZd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lyP-Ig-p6W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gj3-iq-mSN"/>
+                    <connections>
+                        <outlet property="dateOfBirthLabel" destination="vv0-11-cvJ" id="WYb-Jn-yaU"/>
+                        <outlet property="fullAddressLabel" destination="gdt-pY-rII" id="Th3-1T-jLr"/>
+                        <outlet property="phoneNumberLabel" destination="mUs-fh-Oow" id="TiF-Pe-E1F"/>
+                        <outlet property="userDetailView" destination="iQH-qP-Qy4" id="oPb-76-EiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPY-Ze-B6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="1650.6696428571429"/>
         </scene>
         <!--Colors!-->
         <scene sceneID="zsr-30-O94">

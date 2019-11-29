@@ -32,6 +32,15 @@ class RandomUsersViewController: UIViewController {
         displayUsers = Results.getUsers()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userDetails = segue.destination as? RandomDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow else {
+                fatalError("could not locate detail view controller")
+        }
+        
+        userDetails.user = displayUsers[indexPath.row]
+        
+    }
 }
 
 extension RandomUsersViewController: UITableViewDataSource {

@@ -16,6 +16,7 @@ struct User: Codable {
     var location: Address
     var email: String
     var dob: Birthday
+    var phone: String
 }
 
 struct Govt: Codable {
